@@ -2,19 +2,19 @@
 // /* ------------------------------Metodo de agregar y eliminar datos de un array por medio de funciones------------------------------ */
 
 // /*Lista de contactos*/
-const miListaDeContacto = ["Luis Garcia", "Miguel Salazar", "Guillermo Morris", "Mario Gotze", "Benito Suarez", "Maria Lapadula", "Ronaldo de Asis"];
+const listaDeContacto = ["Luis Garcia", "Miguel Salazar", "Guillermo Morris", "Mario Gotze", "Benito Suarez", "Maria Lapadula", "Ronaldo de Asis"];
 
-// /* ------------------------------Funcion crear contacto------------------------------ */
+// /* ------------------------------crear contacto------------------------------ */
 function ingresarDatos(datos){
-    miListaDeContacto.push(datos);
+    listaDeContacto.push(datos);
 }
 
 ingresarDatos("Cristiano Ronaldo")
-console.log(miListaDeContacto);
+console.log(listaDeContacto);
 
-// /* ------------------------------Funcion elimnar contacto------------------------------ */
+// /* ------------------------------elimnar contacto------------------------------ */
 function eliminarContacto(posicionDatoAEliminar, numeroDeDatosAEliminar){
-    miListaDeContacto.splice(posicionDatoAEliminar, numeroDeDatosAEliminar);
+    listaDeContacto.splice(posicionDatoAEliminar, numeroDeDatosAEliminar);
 }
 
 eliminarContacto(3,1);
@@ -24,6 +24,8 @@ console.log(miListaDeContacto);
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+
+/*otro forma*/
 
 
 /*Lista de contactos*/
