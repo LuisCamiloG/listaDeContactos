@@ -17,8 +17,8 @@ function eliminarContacto(posicionDatoAEliminar, numeroDeDatosAEliminar){
     listaDeContacto.splice(posicionDatoAEliminar, numeroDeDatosAEliminar);
 }
 
-eliminarContacto(3,1);
-console.log(miListaDeContacto);
+eliminarContacto(5,1);
+console.log(listaDeContacto);
 
 
 
@@ -58,5 +58,5 @@ console.log(miListaDeContacto);
 //     }
 // }
 
-/*Mostrar contcto*/
+/*Mostrar contacto*/
 // console.log(miListaDeContacto);
