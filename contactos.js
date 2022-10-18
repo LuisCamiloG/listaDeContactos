@@ -28,5 +28,3 @@ function actualizarContacto(contactoAActulizar, numeroDeDatosAActulizar, datoAct
 }
 actualizarContacto(5, 1, 'Leo Messi');
 console.log(miListaDeContacto);
-
-
