@@ -1,62 +1,30 @@
 
-// /* ------------------------------Metodo de agregar y eliminar datos de un array por medio de funciones------------------------------ */
+// /* ------------------------------Método de agregar y eliminar datos de un array por medio de funciones------------------------------ */
 
 // /*Lista de contactos*/
-const listaDeContacto = ["Luis Garcia", "Miguel Salazar", "Guillermo Morris", "Mario Gotze", "Benito Suarez", "Maria Lapadula", "Ronaldo de Asis"];
+const miListaDeContacto = ["Luis Garcia", "Miguel Salazar", "Guillermo Morris", "Mario Gotze", "Benito Suarez", "Maria Lapadula", "Ronaldo de Asis"];
 
-// /* ------------------------------crear contacto------------------------------ */
+// /* ------------------------------Función crear contacto------------------------------ */
 function ingresarDatos(datos){
-    listaDeContacto.push(datos);
+    miListaDeContacto.push(datos);
 }
-
 ingresarDatos("Cristiano Ronaldo")
-console.log(listaDeContacto);
+console.log(miListaDeContacto);
 
-// /* ------------------------------elimnar contacto------------------------------ */
+
+
+// /* ------------------------------Función elimnar contacto------------------------------ */
 function eliminarContacto(posicionDatoAEliminar, numeroDeDatosAEliminar){
-    listaDeContacto.splice(posicionDatoAEliminar, numeroDeDatosAEliminar);
+    miListaDeContacto.splice(posicionDatoAEliminar, numeroDeDatosAEliminar);
 }
-
 eliminarContacto(5,1);
-console.log(listaDeContacto);
+console.log(miListaDeContacto);
 
 
 
-/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-/*otro forma*/
-
-
-/*Lista de contactos*/
-// const miListaDeContacto = ["Luis Garcia", "Miguel Salazar", "Guillermo Morris"];
-
-// const nuevoContacto = [];
-
-// console.log(miListaDeContacto);
-
-/*crear contacto*/
-// let crearContacto = {
-//     Nombre : "Camilo Jimenez",
-//     Edad : 25,
-//     Telefono : 3025214584 
-// }
-// miListaDeContacto.push(crearContacto.Nombre)
-// console.log(miListaDeContacto);
-
-/*eliminar contacto*/
-// let = 1;  
-// const eliminarContacto  = (arr,indice)=>{
-//     arr.splice(indice,1);
-// }
-// let posicion = 0;
-// for (let i= 0; i < miListaDeContacto.length; i++) {
-//     const element = miListaDeContacto[i];
-//     if (element === "Luis Garcia") {
-//         posicion = miListaDeContacto[i]
-//         eliminarContacto(miListaDeContacto,posicion)
-//     }
-// }
-
-/*Mostrar contacto*/
-// console.log(miListaDeContacto);
+// /* ------------------------------Función actulizar------------------------------ */
+function actualizarContacto(contactoAActulizar, numeroDeDatosAActulizar, datoActualizado){
+    miListaDeContacto.splice(contactoAActulizar, numeroDeDatosAActulizar, datoActualizado);
+}
+actualizarContacto(5, 1, 'Leo Messi');
+console.log(miListaDeContacto);
