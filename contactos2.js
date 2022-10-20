@@ -13,11 +13,11 @@ console.log(miListaDeContacto);
 
 /*crear contacto*/
 let crearContacto = {
-    Nombre : "Isacc Gonzalez",
-    Edad : 23,
-    Telefono : 3045258793,
+    Nombre : "Camilo Jimenez",
+    Edad : 25,
+    Telefono : 3025214584,
     Ubicacion : "Barranquilla",
-    Direccion: "Calle 111c 85-57" 
+    Direccion: "Calle 112A 20-51" 
 }
 miListaDeContacto.push(crearContacto.Nombre , crearContacto.Edad, crearContacto.Telefono, crearContacto.Ubicacion, crearContacto.Direccion)
 console.log(miListaDeContacto);
@@ -30,7 +30,7 @@ const eliminarContacto  = (arr,indice)=>{
 let posicion = 0;
 for (let i= 0; i < miListaDeContacto.length; i++) {
     const element = miListaDeContacto[i];
-    if (element === "Guillermo Morris") {
+    if (element === "Luis Garcia") {
         posicion = miListaDeContacto[i]
         eliminarContacto(miListaDeContacto,posicion)
     }
